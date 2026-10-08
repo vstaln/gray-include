@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.91"
 license = "MIT"
-description = "Expand @path includes in AGENTS.md/CLAUDE.md into prompt context (port of pi-context-include)"
+description = "Expand @path includes in AGENTS.md/CLAUDE.md into prompt context"
 
 [[bin]]
 name = "gray-include"

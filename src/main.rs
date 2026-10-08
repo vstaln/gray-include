@@ -1,6 +1,6 @@
 //! gray-include — `@path` includes in AGENTS.md / CLAUDE.md.
 //!
-//! Port of @d3ara1n/pi-context-include (MIT). On every `prompt/context`
+//! On every `prompt/context`
 //! request the sidecar reads AGENTS.md and CLAUDE.md in the session's cwd,
 //! finds `@path/to/file` tokens (line-level and inline), reads the files,
 //! recursively expands includes inside included files (depth cap 8, cycle
