@@ -26,6 +26,7 @@ fn manifest() -> Value {
         "protocol": "1.1",
         "tools": [],
         "commands": ["/include"],
+        "command_descriptions": {"/include": "expand @path includes in AGENTS.md"},
         "hooks": ["prompt/context"],
     })
 }
