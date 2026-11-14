@@ -94,10 +94,10 @@ fn home_dir() -> Option<PathBuf> {
 }
 
 fn resolve(base: &Path, token: &str) -> PathBuf {
-    if let Some(rest) = token.strip_prefix("~/") {
-        if let Some(h) = home_dir() {
-            return h.join(rest);
-        }
+    if let Some(rest) = token.strip_prefix("~/")
+        && let Some(h) = home_dir()
+    {
+        return h.join(rest);
     }
     let p = Path::new(token);
     if p.is_absolute() {
