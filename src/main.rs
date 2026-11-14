@@ -25,6 +25,7 @@ fn manifest() -> Value {
         "version": env!("CARGO_PKG_VERSION"),
         "protocol": "1.1",
         "tools": [],
+        "description": "expand @path includes in AGENTS.md",
         "commands": ["/include"],
         "command_descriptions": {"/include": "expand @path includes in AGENTS.md"},
         "hooks": ["prompt/context"],
